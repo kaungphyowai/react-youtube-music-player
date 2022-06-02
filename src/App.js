@@ -23,6 +23,8 @@ function App() {
     event.preventDefault();
     //get data(name) from 
     console.log(formData);
+    
+    //This is testing for loginInWithGoogle branch
     //get data(name) from
   }
 
