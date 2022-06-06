@@ -1,0 +1,15 @@
+form{
+    text-align: center;
+}
+
+button{
+    width: 500px;
+    height: 40px;
+    color: blueviolet;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-color: #0F9D58 #4285F4 #DB4437 #F4B400;
+    border-radius: 5px;
+    border-width: 2px;
+    margin-top: 400px;
+}

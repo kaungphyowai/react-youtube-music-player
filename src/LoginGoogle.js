@@ -1,10 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import React from "react";
+
+function LoginGoogle() {
   return (
-    <h1>Hello</h1>
+    <form>
+      <button>Login with Google</button>
+    </form>
   );
 }
 
-export default App;
+export default LoginGoogle;
