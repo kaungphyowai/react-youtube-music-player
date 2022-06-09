@@ -11,7 +11,7 @@ function App (){
         <div>
             <Router>
                 <Routes>
-                    <Route path="/" element={<LoginGoogle />}/>
+                    <Route path="/" element={<LoginGoogle /> }/>
                     <Route path="/music-input" element={<MusicInput />}/>
                     <Route path="/music-output" element={<MusicOutput />}/>
                 </Routes>

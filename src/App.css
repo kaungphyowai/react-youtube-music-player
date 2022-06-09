@@ -1,8 +1,19 @@
-form{
+.loginForm, .inputForm{
     text-align: center;
+    position:relative;
+    margin-top: 400px;
+    
 }
 
-button{
+.loginCnt, .inputCnt{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginBtn{
     width: 500px;
     height: 40px;
     color: blueviolet;
@@ -11,5 +22,24 @@ button{
     border-color: #0F9D58 #4285F4 #DB4437 #F4B400;
     border-radius: 5px;
     border-width: 2px;
-    margin-top: 400px;
+    
 }
+
+.inputTxt{
+    width:700px;
+    height: 30px;
+}
+
+::placeHolder{
+    color: #DB4437;
+    font-size: 18px;
+}
+
+.inputBtn{
+    width: 100px;
+    height: 30px;
+    border-width: 3px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+

@@ -1,4 +1,3 @@
-
 import "../App.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
@@ -11,8 +10,10 @@ function LoginGoogle() {
   }
 
   return (
-    <form>
-      <button onClick={handleClick}>Login with Google</button>
+    <form class="loginForm">
+      <div class="loginCnt">
+      <button class="loginBtn" onClick={handleClick}>Login with Google</button>
+      </div>
     </form>
   );
 }
