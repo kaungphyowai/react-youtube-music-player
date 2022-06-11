@@ -7,6 +7,7 @@ import MusicInput from "./Pages/MusicInput";
 import MusicOutput from "./Pages/MusicOutput";
 
 function App (){
+    
     return (
         <div>
             <Router>

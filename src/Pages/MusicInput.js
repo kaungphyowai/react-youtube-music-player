@@ -2,6 +2,9 @@ import "../App.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+
+
+
 function MusicInput(){
     let navigate = useNavigate()
     function handleClick(){
@@ -25,6 +28,7 @@ function MusicInput(){
     function handleSubmit(event){
             event.preventDefault();
             //get URLdata from HERE
+            // data={formData.ytubeUrl}
             console.log(formData)
             //get URLdata from HERE
     }
@@ -49,7 +53,7 @@ function MusicInput(){
                 </div>
                 
             </form>
-
+        
         </div>
     )
 }

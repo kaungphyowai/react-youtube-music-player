@@ -43,3 +43,7 @@
     font-size: 18px;
 }
 
+.video-playing{
+    display: flex;
+    justify-content: center;
+}
