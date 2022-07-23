@@ -19,10 +19,10 @@ function MusicInput(){
     
     function handleChange(event){
            const {name, value} = event.target;
-           setFormData(prevFormData => ({
-               ...prevFormData,
+           console.log(formData)
+           setFormData({
                [name]: value
-           }))
+           })
     }
 
     function handleSubmit(event){
