@@ -6,8 +6,11 @@ import signInWithGoogle from "../firebase/auth";
 function LoginGoogle() {
   let navigate = useNavigate();
 
-  function handleClick() {
-    navigate("/music-input");
+  function handleClick(e) {
+    e.preventDefault();
+    const user = signInWithGoogle();
+    console.log(user);
+    // navigate("/music-input");
   }
 
   return (

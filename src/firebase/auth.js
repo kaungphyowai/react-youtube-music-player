@@ -1,7 +1,7 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const signInWithGoogle = () => {
-  const provider = GoogleAuthProvider();
+  const provider = new GoogleAuthProvider();
   signInWithPopup(getAuth(), provider)
     .then((result) => {
       const user = result.user;
@@ -9,6 +9,7 @@ const signInWithGoogle = () => {
     })
     .catch((error) => {
       console.error(error.code + " " + error.message);
+      return error;
     });
 };
 
