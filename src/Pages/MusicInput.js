@@ -19,7 +19,6 @@ function MusicInput(){
     
     function handleChange(event){
            const {name, value} = event.target;
-           console.log(formData)
            setFormData({
                [name]: value
            })
