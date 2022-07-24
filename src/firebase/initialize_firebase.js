@@ -20,6 +20,7 @@ const initFirebase = async () => {
 
     //Initialize Realtime Database and get a reference to the service
     const db = getDatabase(app);
+
   } catch (e) {
     console.error(e);
     return e;

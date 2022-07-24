@@ -5,42 +5,42 @@ import { useNavigate } from "react-router-dom";
 
 
 
-function MusicInput(){
+function MusicInput() {
     let navigate = useNavigate()
-    function handleClick(){
+    function handleClick() {
         navigate("/music-output")
     }
-    
-    const[formData, setFormData] = React.useState({
+
+    const [formData, setFormData] = React.useState({
         ytubeUrl: ""
     })
-    
-    
-    
-    function handleChange(event){
-           const {name, value} = event.target;
-           setFormData({
-               [name]: value
-           })
+
+
+
+    function handleChange(event) {
+        const { name, value } = event.target;
+        setFormData({
+            [name]: value
+        })
     }
 
-    function handleSubmit(event){
-            event.preventDefault();
-            //get URLdata from HERE
-            // data={formData.ytubeUrl}
-            console.log(formData)
-            //get URLdata from HERE
+    function handleSubmit(event) {
+        event.preventDefault();
+        //get URLdata from HERE
+        // data={formData.ytubeUrl}
+        console.log(formData)
+        //get URLdata from HERE
     }
-    
-    return(
+
+    return (
         <div>
             <h1>Music-Input Page</h1>
             <button className="toOutputPg"
-                    onClick={handleClick}
+                onClick={handleClick}
             >Watch Playlist</button>
-              <form className="inputForm" onSubmit={handleSubmit}>
+            <form className="inputForm" onSubmit={handleSubmit}>
                 <div className="inputCnt">
-                    <input 
+                    <input
                         className="inputTxt"
                         placeholder="url here"
                         onChange={handleChange}
@@ -50,9 +50,9 @@ function MusicInput(){
                     <br /><br />
                     <button className="inputBtn">Confirm</button>
                 </div>
-                
+
             </form>
-        
+
         </div>
     )
 }

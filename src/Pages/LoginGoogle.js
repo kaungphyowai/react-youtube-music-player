@@ -2,15 +2,19 @@ import "../App.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import signInWithGoogle from "../firebase/auth";
+import { getAuth } from "firebase/auth";
 
 function LoginGoogle() {
   let navigate = useNavigate();
 
-  function handleClick(e) {
+  async function handleClick(e) {
     e.preventDefault();
-    const user = signInWithGoogle();
-    console.log(user);
-    // navigate("/music-input");
+    // const user = await signInWithGoogle();
+    console.log(getAuth().currentUser)
+    // if (user) {
+
+    //   navigate("/music-input");
+    // }
   }
 
   return (
