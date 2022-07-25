@@ -1,11 +1,11 @@
-.loginForm, .inputForm{
+.inputForm{
     text-align: center;
     position:relative;
     margin-top: 400px;
     
 }
 
-.loginCnt, .inputCnt{
+.inputCnt{
     margin: 0;
     position: absolute;
     top: 50%;
@@ -13,17 +13,39 @@
     transform: translate(-50%, -50%);
 }
 
-.loginBtn{
-    width: 500px;
-    height: 40px;
-    color: blueviolet;
-    font-size: 20px;
-    letter-spacing: 1px;
-    border-color: #0F9D58 #4285F4 #DB4437 #F4B400;
-    border-radius: 5px;
-    border-width: 2px;
-    
+body{
+    background-color: #f4dcc0;
 }
+
+.loginBtn{
+    width: 400px;
+    height: 90px;
+    color: #8a745f;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 400px;
+    display: block;
+    border-color: #8f4b13;
+    border-radius: 4px;
+    border-width: 3.3px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.texts{
+    margin-left: -10px;
+}
+
+.show{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: -65px;
+}
+
+.hide{
+    display: none;
+}
+
 
 .inputTxt{
     width:700px;
